@@ -21,6 +21,19 @@ body{
     --nav-hover-background-color:#A1B0AB;
 }
 
+Header{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 4fr;
+}
+
+.logo{
+    margin: 0 0.25rem 0 1rem;
+	width: 100px;
+	height: auto;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -28,6 +41,7 @@ h1, h2 {
 
 div{
     position: relative;
+
 }
 
 div h1{
@@ -55,9 +69,9 @@ p{
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    /*background-color: var(--nav-background-color);*/
     font-size: 1.2rem;
-    display: flex;
+    grid-column: 2/3;
 }
 
 nav a {
@@ -74,6 +88,12 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Class Selector */
@@ -97,6 +117,16 @@ nav a:hover {
     color: white;
 }
 
+.history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    border: 1px solid steelblue;
+    padding: 1rem;
+    background-color: rgba(70, 131, 180, 0.322);
+    color: white;
+}
 .head{
     margin: 1rem;
     border: 1px solid steelblue;
