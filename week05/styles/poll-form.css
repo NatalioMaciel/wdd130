@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif, roboto, playfair;
+    font-size: 1rem;
+    color: #443850;
+    background-color: #fff;
+}
+
+header{
+    margin: 0 auto;
+    width: 840px
+}
+
+h1{
+    margin: 0.5rem;
+    color: #443850;
+    font-size: 2rem;
+    text-align: center;
+}
+
+form{
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #615E71;
+    border-radius: 0.5rem;
+    background-color: #eee;
+}
+
+.fieldset{
+    display: grid;
+    width: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+.legend{
+    width: 400px;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+
+
+
+
