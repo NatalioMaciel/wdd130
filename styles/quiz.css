@@ -69,6 +69,6 @@ button:hover{
 }
 
 .img{
-    position:relative;
     width: auto;
+    top: auto;
 }
