@@ -2,8 +2,10 @@
 
 body{
     font-family: var(--paragraph-font);
-    max-width: 100%;
+    max-width: 70%;
     padding: 20px;
+    margin: 0 auto;
+    display: grid;
 }
 
 :root{
@@ -91,6 +93,7 @@ nav a:hover {
 }
 
 
+
 figure {
     border: thin #c0c0c0 solid;
     display: flex;
@@ -103,6 +106,7 @@ figure img{
     max-width: 220px;
     max-height: 150px;
 }
+
 figcaption {
     background-color: #222;
     color: #fff;
@@ -110,7 +114,22 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Class Selector */
+
+.div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    align-content: center;
+    position: relative;
+}
 
 .hero img{
     display: block;
@@ -145,11 +164,92 @@ figcaption {
 
 .article{
     display: flex;
+    width: 100%;
+}
+
+.logo{
+    margin: 0 0.25rem 0 1rem;
+	width: 100px;
+	height: auto;
+}
+
+.employee{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+/*form*/
+
+form{
+    display: grid;
+    width: 94%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #615E71;
+    border-radius: 0.5rem;
+    background-color: #eee;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0.5rem;
+    width: 70%;
+    align-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid #615E71;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+legend{
+    font-size: 1.2rem;
+    color: #443850;
+}
+
+label, input, button, select, textarea{
+    font-family: sans-serif;
+
+}
+
+label{
+    padding: 0.5rem;
     
 }
-/*
-.head{
-    width: 100%;
-    padding: 1rem;
-    color: #42BFDD;
-}*/
+
+
+
+select, select, textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+input[type="checkbox"]{
+    width: auto;
+    height: auto;
+    vertical-align: bottom;
+}
+
+button{
+    background-color: #443850;
+    color: #fff;
+    align-self: center;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 0.90rem;
+}
+
+button:hover{
+    background-color: #7D8491;
+}
+
+footer{
+    margin: 1rem auto 0;
+    border-top: 1px solid #443850;
+    width: 600px;    
+    text-align: center;
+    font-size: 0.9rem;
+}
