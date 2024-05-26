@@ -18,7 +18,7 @@ body{
     --paragraph-font:var(--secondary-color),roboto;
 
     --nav-background-color:#e5dcc5;
-    --nav-link-color:848FA5;
+    --nav-link-color: #848FA5;
     --nav-hover-link-color:#D5ECD4;
     --nav-hover-background-color:#A1B0AB;
 }
