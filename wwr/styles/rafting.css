@@ -155,7 +155,7 @@ nav a:hover {
 ul, li {
     text-align: center;
     list-style: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
 }
 
